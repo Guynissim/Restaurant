@@ -4,19 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Restaurant Manager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    tools:context=".CustomDialog">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,24 +13,23 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btnNewGame"
+            android:id="@+id/btnEasy"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create New Game"></Button>
+            android:text="Easy mode"></Button>
 
         <Button
-            android:id="@+id/btnLoadGame"
+            android:id="@+id/btnMedium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Load Game"></Button>
+            android:text="Medium mode"></Button>
 
         <Button
-            android:id="@+id/btnGuide"
+            android:id="@+id/btnHard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Guide"></Button>
+            android:text="Hard mode"></Button>
 
     </LinearLayout>
-
 
 </LinearLayout>
