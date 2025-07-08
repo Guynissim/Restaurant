@@ -1,19 +1,22 @@
 package com.example.restaurant;
 
-public abstract class Employee {
-    protected String name;
+public abstract class Employee extends Human {
+
     protected int salary;
 
-    public Employee(String name, int salary) {
-        this.name = name;
+    public Employee(int salary, String name) {
+        super(name);
         this.salary = salary;
     }
+
     public abstract String getRole();
+
     public int getSalary() {
         return salary;
     }
 
+    @Override
     public String getName() {
-        return name;
+        return super.getName();
     }
 }
