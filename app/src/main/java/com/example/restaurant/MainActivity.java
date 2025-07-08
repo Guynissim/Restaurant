@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         Intent intent;
         if (v == btnNewGame) {
+            startActivity(new Intent(this, DifficultyActivity.class));
 
         }
 
