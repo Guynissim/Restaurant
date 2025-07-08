@@ -23,7 +23,6 @@ public class DifficultyActivity extends AppCompatActivity implements View.OnClic
         btnHard.setOnClickListener(this);
         btnCancel = findViewById(R.id.btnCancel);
         btnCancel.setOnClickListener(this);
-
     }
 
     @Override
@@ -33,16 +32,14 @@ public class DifficultyActivity extends AppCompatActivity implements View.OnClic
         else {
             int budget = 0;
             Intent intent = new Intent(this, GameActivity.class);
-            if (v==btnEasy)
+            if (v == btnEasy)
                 budget = 1500;
-            if (v==btnMedium)
+            if (v == btnMedium)
                 budget = 1000;
-            if(v == btnHard)
+            if (v == btnHard)
                 budget = 500;
-            intent.putExtra("budget",budget);
+            intent.putExtra("budget", budget);
             startActivity(intent);
         }
-
-
     }
 }
